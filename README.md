@@ -32,17 +32,11 @@ IRW冲激响应宽度，指冲激响应的3dB宽度，其数值等于脉冲分�
 $\rho = \frac{0.886}{| K | T} \approx \frac{1}{| K | T}$
 
 PSLR最大旁瓣与主瓣峰值的高度比，称为峰值旁瓣比。
-	\begin{equation}
-		PSLR=10log_{10} \left( \frac{P_{sidelobe}}{P_{mainlobe}} \right)
-		\label{峰值旁瓣比PSLR公式}
-	\end{equation}
-	\item {ISLR} \\
-	积分旁瓣比，旁瓣能量与主瓣能量的比值(计算中主峰和旁瓣以靠近峰值的两个零点为分界线)
-	\begin{equation}
-		ISLR=10log_{10} \left( \frac{P_{total}-P_{main}}{P_{main}} \right)
-		\label{积分旁瓣比ISLR公式}
-	\end{equation}
-\end{enumerate}
+$PSLR=10log_{10} \left( \frac{P_{sidelobe}}{P_{mainlobe}} \right)$
+
+ISLR积分旁瓣比，旁瓣能量与主瓣能量的比值(计算中主峰和旁瓣以靠近峰值的两个零点为分界线)
+$ISLR=10log_{10} \left( \frac{P_{total}-P_{main}}{P_{main}} \right)$
+
 
 ### （1）实现无误差的脉冲压缩，计算指标（IRW、PSLR、ISLR）
 
