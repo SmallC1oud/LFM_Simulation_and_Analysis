@@ -28,16 +28,10 @@
 
 ## 2.针对"基带LFM信号"实现脉冲压缩仿真
 
-\begin{enumerate}
-	\item {IRW} \\
-	冲激响应宽度，指冲激响应的3dB宽度，其数值等于脉冲分辨率，时间量纲下的3dB分辨率可以表示为
-	\begin{equation}
-		\rho = \frac{0.886}{| K | T} \approx \frac{1}{| K | T}
-		\label{脉冲分辨率}
-		% \ref{脉冲分辨率}
-	\end{equation}
-	\item {PSLR} \\
-	最大旁瓣与主瓣峰值的高度比，称为峰值旁瓣比。
+IRW冲激响应宽度，指冲激响应的3dB宽度，其数值等于脉冲分辨率，时间量纲下的3dB分辨率可以表示为
+$\rho = \frac{0.886}{| K | T} \approx \frac{1}{| K | T}$
+
+PSLR最大旁瓣与主瓣峰值的高度比，称为峰值旁瓣比。
 	\begin{equation}
 		PSLR=10log_{10} \left( \frac{P_{sidelobe}}{P_{mainlobe}} \right)
 		\label{峰值旁瓣比PSLR公式}
